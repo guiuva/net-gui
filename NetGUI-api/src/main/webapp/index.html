@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+  @author Ismael Taboada
+  Modified by: David Soler <aensoler@gmail.com>
+-->
+<html>
+  <head>
+    <title>Registro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="shortcut icon" href="../src/computer.ico" height="16" width="16"/>-->
+    <link rel="stylesheet" href="resources/css/estilos.css">
+    <script src="vendor/jquery/jquery-2.2.0.min.js"></script>
+    <script src="resources/js/model.js"></script>
+    <script src="resources/js/controller.js"></script>
+  </head>
+  <body>
+    <!--<div id="atras" onfocus="this.blur();" tabIndex="0">
+      <a href="http://gestion-gui.local/" class="button">&larr; Atrás</a>
+    </div>-->
+    <form class="formulario" name="formulario" id="formulario" method="POST">
+      <div>
+        <label>Id: *</label>
+        <input type="text" name="id">
+      </div>
+      <div>
+        <label>Contraseña: *</label>
+        <input type="password" name="password">
+      </div>
+      <div>
+        <label>Confirmar contraseña: *</label>
+        <input type="password" name="password2">
+      </div>
+      <div>
+        <label>Nombre: *</label>
+        <input type="text" name="firstName">
+      </div>
+      <div>
+        <label>Apellido(s): *</label>
+        <input type="text" name="lastName">
+      </div>
+      <div>
+        <label>DNI/NIF: *</label>
+        <input type="text" name="dni">
+      </div>
+      <div>
+        <label>NIA:</label>
+        <input type="text" name="nia">
+      </div>
+      <div>
+        <label>Email: *</label>
+        <input type="text" name="email">
+      </div>
+      <div>
+        <label>Teléfono:</label>
+        <input type="text" name="phone">
+      </div>
+      <div>
+        <label>Estado:</label>
+        <input type="text" name="state">
+      </div>
+      <div>
+        <label>Fecha de inscripción:</label>
+        <input type="date" name="idate" readonly disabled>
+      </div>
+      <!--<div>
+        <label>Fecha de nacimiento: *</label>
+        <input type="date" class="ndate" name="ndate">
+      </div>-->
+      <div>
+        <label>Grado/Carrera:</label>
+        <input type="text" name="grado">
+      </div>
+      <!--<div>
+        <label>Intereses:</label>
+        <div class="columns">
+          <div>
+            <input type="checkbox" name = "interes" value ="bbdd">Bases de datos<br>
+            <input type="checkbox" name = "interes" value ="paradigmas">Paradigmas<br>
+            <input type="checkbox" name = "interes" value ="comunseg">Comunicación y seguridad<br>
+            <input type="checkbox" name = "interes" value ="compilador">Compiladores<br>
+            <input type="checkbox" name = "interes" value ="leng">Lenguajes de programación<br>
+            <input type="checkbox" name = "interes" value ="iso">Ingeniería de software<br>
+            <input type="checkbox" name = "interes" value ="algoritmos">Diseño y análisis de algoritmos<br>
+            <input type="checkbox" name = "interes" value ="sd">Sistemas distribuidos<br>
+          </div><div>
+            <input type="checkbox" name = "interes" value ="so">Sistemas Operativos<br>
+            <input type="checkbox" name = "interes" value ="ia">Inteligencia Artificial<br>
+            <input type="checkbox" name = "interes" value ="infografia">Infografía<br>
+            <input type="checkbox" name = "interes" value ="ipc">Interacción persona-computador<br>
+            <input type="checkbox" name = "interes" value ="compparal">Cómputo paralelo<br>
+            <input type="checkbox" name = "interes" value ="games">Diseño y análisis de videojuegos<br>
+            <input type="checkbox" name = "interes" value ="robot">Robótica<br>
+            <input type="checkbox" name="interes" value="other" id="interesen">Otro:<br>
+            <input type="other-text" class="other" name="otherinteres" id="part" disabled>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>-->
+      <div align="right">Los campos marcados con * son obligatorios</div>
+      <div>
+        <input type="submit" value="Enviar" name="submit">
+        <!--<input type="reset" value="Limpiar" name="clear">-->
+      </div>
+    </form>
+  </body>
+</html>
